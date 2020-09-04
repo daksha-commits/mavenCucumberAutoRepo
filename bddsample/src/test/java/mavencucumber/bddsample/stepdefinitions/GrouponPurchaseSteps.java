@@ -29,15 +29,6 @@ public class GrouponPurchaseSteps
 	@Given("I navigate to groupon site {string}")     
 	public void i_navigate_to_groupon_site(String string) throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
-		
-		/*
-		 * System.setProperty("webdriver.chrome.driver",
-		 * "C:\\Automation\\Packages\\chromedriver_win32\\chromedriver.exe") ;
-		 * ChromeOptions options = new ChromeOptions();
-		 * options.setExperimentalOption("excludeSwitches", new
-		 * String[]{"enable-automation"}); driver = new ChromeDriver(options) ;
-		 * driver.manage().window().maximize();
-		 */
 		url = string ;
 	    driver.get(url);        
 		Thread.sleep(5000);
@@ -62,11 +53,8 @@ public class GrouponPurchaseSteps
 
 	@Then("I am logged in successfully")
 	public void i_am_logged_in_successfully() throws InterruptedException {
-	    // Write code here that turns the phrase above into concrete actions
-	   // throw new io.cucumber.java.PendingException();
-		//<span class="nav-line-1">Hello, Daksha</span>
+
 		Thread.sleep(5000);
-	//	String welcomeText = driver.findElement(By.xpath("//*[@id=\"nav-link-accountList\"]/div/span")).getText() ;
 		String welcomeText = driver.findElement(By.className("main-page-header-title")).getText() ;
 		Assert.assertEquals("Hi Daksha,", welcomeText);
 
@@ -75,8 +63,7 @@ public class GrouponPurchaseSteps
 	@Given("I see search box on home page")
 	public void i_see_search_box_on_home_page() throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
-	   // throw new io.cucumber.java.PendingException();
-		Thread.sleep(10000);
+    	Thread.sleep(10000);
 
 		WebElement elm = driver.findElement(By.cssSelector("input#ls-search"));
 		if (elm == null)
@@ -113,7 +100,6 @@ public class GrouponPurchaseSteps
             else
             {
             	System.out.println("Found wrong title as "+title);
-            	//break ;
             }
         } 
 
