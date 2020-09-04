@@ -43,7 +43,7 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.vimalselvam/cucumber-extentsreport -->
-		<dependency>
+<!-- 		<dependency>
 			<groupId>com.vimalselvam</groupId>
 			<artifactId>cucumber-extentsreport</artifactId>
 			<version>3.0.2</version>
@@ -56,7 +56,7 @@
 			<artifactId>extentreports</artifactId>
 			<version>3.1.2</version>
 			<scope>test</scope>
-		</dependency>
+		</dependency> -->
 		<!-- JUnit 5 Dependencies -->
 
 

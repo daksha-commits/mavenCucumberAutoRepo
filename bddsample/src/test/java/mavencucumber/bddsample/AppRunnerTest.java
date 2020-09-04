@@ -12,8 +12,9 @@ import io.cucumber.junit.CucumberOptions;
 		  //dryRun=true,
 		  glue= { "mavencucumber.bddsample.stepdefinitions"}, 
 		  features= {"classpath:feature"},
-		  plugin={"pretty", "html:target/bddsample-htmlreport.html",
-		  		  "json:target/bddsample-jason.json"//,
+		  plugin={"pretty", 
+				  "html:target/bddsample-htmlreport",
+		  		  "json:target/bddsample-jasonreport.json"//,
 		  		//"com.cucumber.listener.ExtentCucumberFormatter:target/report.html"
 		  		  } 
 		  )

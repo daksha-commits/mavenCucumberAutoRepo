@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import com.cucumber.listener.Reporter;
+//import com.cucumber.listener.Reporter;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -45,7 +45,7 @@ public class AppHooks {
 	@After
 	public static void teardown() {
 
-			 Reporter.loadXMLConfig(new File("src\\test\\resources\\extent-config.xml"));
+			// Reporter.loadXMLConfig(new File("src\\test\\resources\\extent-config.xml"));
 
 		driver.quit();
 	}
