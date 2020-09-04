@@ -45,7 +45,7 @@ public class AppHooks {
 	@After
 	public static void teardown() {
 
-			// Reporter.loadXMLConfig(new File("src\\test\\resources\\extent-config.xml"));
+	 //  Reporter.loadXMLConfig(new File("src\\test\\resources\\extent-config.xml"));
 
 		driver.quit();
 	}

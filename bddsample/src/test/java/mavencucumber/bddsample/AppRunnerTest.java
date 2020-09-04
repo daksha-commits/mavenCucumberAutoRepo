@@ -15,7 +15,7 @@ import io.cucumber.junit.CucumberOptions;
 		  plugin={"pretty", 
 				  "html:target/bddsample-htmlreport",
 		  		  "json:target/bddsample-jasonreport.json"//,
-		  		//"com.cucumber.listener.ExtentCucumberFormatter:target/report.html"
+		  		//  "com.cucumber.listener.ExtentCucumberFormatter:target/extentreport.html"
 		  		  } 
 		  )
  
